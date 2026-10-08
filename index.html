@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>College Event Registration</h1>
+
+<div class="box">
+    <h2>Student Registration / Login</h2>
+    <label >Student name</label>
+    <input type="text" id="name" placeholder="Student Name"><br>
+     <label >Roll Number</label>
+    <input type="text" id="usn" placeholder="USN / Roll Number"><br>
+    <label >Email</label>
+    <input type="email" id="email" placeholder="Email"><br>
+    <label >Department</label>
+    <select id="department">
+        <option value="">Select Department</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>ME</option>
+    </select>
+    <br>
+    <button onclick="login()">Login / Register</button>
+
+    <p id="loginResult"></p>
+</div>
+
+
+<div class="box">
+    <h2>Event Dashboard</h2>
+
+    <div class="event">
+        <h2>Event1:</h2>
+        <h3>pleddies</h3>
+        <p>This the event where the students enjoy a lot and they get a lots of people to know. </p>
+        <p>25-10-2025</p>
+        <p>gymkhana</p>
+        <p>4:30 pm</p>
+        <p>dancing</p>
+        <p>singing etc</p>
+    </div>
+
+    <div class="event">
+        <h2>Event2:</h2>
+       <h3>sports</h3>
+        <p>this is the event where the students play sports like badminton,tabletennies,cricket etc.they win the prices and enjoys a lot.</p>
+        <p>26-11-2026</p>
+        <p>arena</p>
+        <p>4:30 pm</p>
+        <p>badminton</p>
+        <p>cricket etc</p>
+    </div>
+
+    <div class="event">
+        <h2>Event3:</h2>
+         <h3>freshers</h3>
+        <p> this is the event where the students get coonected with seniors.they enjoy a lot.play a vareity of rolls</p>
+        <p>24-11-2026</p>
+        <p>auditorium</p>
+        <p>10am</p>
+        <p>dancing</p>
+        <p>singing etc</p>
+        
+    </div>
+</div>
+
+
+<div class="box">
+    <label >Student name</label>
+    <input type="text" id="sname" placeholder="Student Name"><br>
+     <label >Roll Number</label>
+    <input type="text" id="roll" placeholder="USN / Roll Number"><br>
+    <label >Email</label>
+    <input type="email" id="email" placeholder="Email"><br>
+    <label >Department</label>
+    <select id="department">
+        <option value="">Select Department</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>ME</option>
+    </select>
+    <br>
+    <label >Event selection</label>
+    <select id="event">
+        <option value="">select the event</option>
+        <option>Event1</option>
+        <option>Event2</option>
+       <option>Event3</option>
+    </select>
+    <br>
+
+    <label>Event Date:</label>
+    <input type="date" id="edate">
+    <br>
+
+    <button onclick="eventbooking()">Register</button>
+
+    <p id="Registerresult"></p>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
